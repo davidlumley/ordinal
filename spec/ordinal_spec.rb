@@ -2,44 +2,44 @@ require File.expand_path('lib/ordinal')
 
 describe Ordinal do
   
-  context 'single number' do
+  test_cases = [
+    [0, '0'],
+    [1, '1st'],
+    [2, '2nd'],
+    [3, '3rd'],
+    [4, '4th'],
+    [5, '5th'],
+    [6, '6th'],
+    [7, '7th'],
+    [8, '8th'],
+    [9, '9th'],
+    [10, '10th'],
+    [11, '11th'],
+    [12, '12th'],
+    [13, '13th'],
+    [14, '14th'],
+    [15, '15th'],
+    [16, '16th'],
+    [17, '17th'],
+    [18, '18th'],
+    [19, '19th'],
+    [20, '20th'],
+    [21, '21st'],
+    [22, '22nd'],
+    [23, '23rd'],
+    [24, '24th'],
+    [25, '25th'],
+    [26, '26th'],
+    [27, '27th'],
+    [28, '28th'],
+    [29, '29th']
+    ]
+  
+  test_cases.each do |test_case, expected_result|
     
-    it 'should translate 1 to 1st' do
-      1.to_ordinal.should eql('1st')
+    it "should translate #{test_case} to #{expected_result}" do
+      test_case.to_ordinal.should eql(expected_result)
     end
-    
-    it 'should translate 2 to 2nd' do
-      2.to_ordinal.should eql('2nd')
-    end
-    
-    it 'should translate 3 to 3rd' do
-      3.to_ordinal.should eql('3rd')
-    end
-    
-    it 'should translate 4 to 4th' do
-      4.to_ordinal.should eql('4th')
-    end
-    
-    it 'should translate 5 to 5th' do
-      5.to_ordinal.should eql('5th')
-    end
-    
-    it 'should translate 6 to 6th' do
-      6.to_ordinal.should eql('6th')
-    end
-    
-    it 'should translate 7 to 7th' do
-      7.to_ordinal.should eql('7th')
-    end
-    
-    it 'should translate 8 to 8th' do
-      8.to_ordinal.should eql('8th')
-    end
-    
-    it 'should translate 9 to 9th' do
-      9.to_ordinal.should eql('9th')
-    end
-    
   end
   
 end
