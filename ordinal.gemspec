@@ -18,4 +18,7 @@ Gem::Specification.new do |gem|
   gem.name          = "ordinal"
   gem.require_paths = ["lib"]
   gem.version       = Ordinal::VERSION
+  
+  gem.add_development_dependency  'rspec', '~> 2.10'
+  
 end
