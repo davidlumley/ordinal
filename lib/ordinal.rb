@@ -1,5 +1,14 @@
 require "ordinal/version"
 
 module Ordinal
-  # Your code goes here...
+  
+  def to_ordinal
+  end
+  
+end
+
+class Numeric
+  
+  include Ordinal
+  
 end
