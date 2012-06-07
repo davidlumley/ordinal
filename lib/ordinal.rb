@@ -11,7 +11,7 @@ module Ordinal
       0.to_s
     when (number % 100 >= 11 and
           number % 100 <= 13)
-      number.to_s + 'th'
+      number.to_s << 'th'
     else
       number.to_s << suffixes[number % 10]
     end
