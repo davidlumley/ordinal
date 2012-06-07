@@ -1,6 +1,6 @@
 # Ordinal
 
-TODO: Write a gem description
+Converts a number (e.g. 1) to an ordinal number (e.g. 1st)
 
 ## Installation
 
@@ -18,7 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+	0.to_ordinal	# 0
+	1.to_ordinal	# 1st
+	5.to_ordinal	# 5th
+	23.to_ordinal	# 23rd
 
 ## Contributing
 
