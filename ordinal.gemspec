@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{
     Converts a number (e.g. 1) to an ordinal number (e.g. 1st)
   }
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/davidlumley/ordinal"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
